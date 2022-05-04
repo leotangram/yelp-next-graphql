@@ -8,7 +8,7 @@ import { Business, BusinessResult } from '../../interfaces'
 import styles from './Business.module.scss'
 import client from '../../apollo-client'
 import { BUSINESS } from '../../queries'
-import { WEEK_DAYS } from '../../constants'
+import { WeekDaysType, WEEK_DAYS } from '../../constants'
 import { useAppDispatch, useAppSelector } from '../../hooks'
 import { selectBusiness } from '../../features/business'
 import { setBusinessListId } from '../../features/business/actions'
@@ -69,7 +69,7 @@ const BusinessPage: FC<BusinessPageProps> = ({ business }) => {
           <Spacer x={1} />
           <div>
             {hours[0].open.map(({ day, end, start }, index) => {
-              const dayName = WEEK_DAYS[day]
+              const dayName = WEEK_DAYS[day as keyof WeekDaysType]
               return (
                 <div key={`${day}_${index}`}>
                   <Text h4 className={styles.text}>

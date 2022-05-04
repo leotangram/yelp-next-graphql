@@ -1,4 +1,4 @@
-type WeekDaysType = {
+export type WeekDaysType = {
   0: string
   1: string
   2: string
