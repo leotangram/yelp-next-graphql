@@ -94,7 +94,7 @@ const BusinessPage: FC<BusinessPageProps> = ({ business }) => {
             <Spacer x={1} />
             <ul>
               {reviews.slice(0, 5).map(({ text }, index) => (
-                <li>
+                <li key={`${text}_${index}`}>
                   <Text className={styles.text} key={`${text}_${index}`}>
                     {text}
                   </Text>
