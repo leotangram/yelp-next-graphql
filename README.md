@@ -2,7 +2,7 @@
 
 ## LiveDemo
 
-[You can view livedemo project](...)
+[You can view livedemo project](https://yelp-next-graphql-dwchqzipd-leotangram.vercel.app/)
 
 ## Run Local project
 
