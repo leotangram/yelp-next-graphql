@@ -1,0 +1,19 @@
+.business-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 16px !important;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .grids {
+    flex-direction: column-reverse;
+  }
+}
